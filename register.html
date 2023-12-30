@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+<!-- <style>
+body{
+    font-family: monospace;
+    color: black;
+    background-color: coral;
+}
+input[type="checkbox"]{
+    background-color: azure;
+    color: black;
+    width: 35px;
+    height: 15px;
+    }
+    input[type="number"]{
+    background-color: white;
+    color: black;
+    width: 55px;
+    height: 15px;
+    border-radius: 0.5;
+    /* border-color: blueviolet; */
+    }
+    input[type="text"]{
+    background-color: rgb(255, 255, 255);
+    color: black;
+   border-radius: 0.5;
+    }
+::placeholder{
+    color: rgb(18, 57, 35);
+}
+button{
+    color: rgb(18, 57, 35);
+}
+
+
+</style> -->
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+    }
+    body{
+        background-color: rgb(71, 106, 172);
+    }
+    .naBar{
+        height: 100vh;
+        width: 100%;
+    background-position: center;
+    background-size: cover;
+        background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../Images/tour3.jpg);
+    background-color: rgb(229, 236, 236);
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 33px;
+        padding-left: 21px;
+        padding-right: 10%;
+    }
+    .logo{
+        color: white;
+        font-size: 21px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    ul{
+        list-style: none;
+    }
+    ul li{
+        display: inline-block;
+        padding: 15px;
+    }
+    ul li a{
+        text-decoration: none;
+
+    }
+    ul li a:hover{
+        background-color: brown;
+        transition: 0.3s;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    span{
+        color: rgb(255, 0, 25);
+        font-style: italic;
+    }
+    button{
+        /* width: 155px; */
+        height: 45px;
+        color:rgb(246, 255, 0);
+        border-radius: 15px;
+        background-color:rgb(63, 85, 71);
+        text-align: center;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+    button:hover{
+        transform: scale(1.2);
+        /* color: blue; */
+        background-color: crimson;
+        cursor: pointer;
+    }
+    #logo-text{
+        width: 75px;
+        height: auto;
+    }
+    #introduction{
+        width: 400px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+
+</head>
+<body>
+    <div class="naBar">
+        <nav>
+            <h2 class="logo" id="logo-text"><span>AASTU</span> Tour and Travel <span>premium</span></h2>
+            <ul>
+                <li><a href="#"><button class="nav-btn">Home</button></a></li>
+                <li><a href="#"><button class="nav-btn">Tours</button></a></li>
+                <li><a href="#"> <button class="nav-btn">About</button></a></li>
+                <li><a href="#"><button class="nav-btn">register</button></a></li>
+                <li><a href="#"><button class="nav-btn">login</button></a></li>
+                <li><a href="#"><button class="nav-btn">Contact</button></a></li>
+            </ul>
+            <button type="button">Subscribe</button>
+        </nav>
+    </div>
+
+    <table border="0" cellspacing="0" cellpadding="1" width="100%">
+    <tr>
+        <form action="GET">
+            <fieldset >
+                <p>welcome to the registration page. After you registered we, hope you will be our beloved guest every time. We hope, you will be happy and make it possible to proceed your dreams.</p>
+                <td colspan="100%"> 
+                <label>full-name : 
+                     <div>
+                        <input type="text"  required>
+                    </div>
+                </label>
+               
+                <label>sex :
+                    <div> male <input type="radio" name="sex"> female <input type="radio" name="sex" required></div>
+                 </label>
+                
+                <label> Age:
+                    <div><input type="number"  max="35" min="17" required></div>
+                </label> 
+            
+                <label>country:
+                    <div><input type="text"  required></div>
+                </label>
+            </fieldset>
+        </form>
+    </td>
+
+    <td>
+        <label>
+            email :
+            <div><input type="email" minlength="8" maxlength="28"  required></div >
+        </label>
+        <br>
+    <label>
+        create strong Password(6-12 character): 
+        <div> 
+            <input type="password" maxlength="12" minlength="6" placeholder="password" required>
+        </div>
+    </label>
+    <br>
+        <button type="submit">submit </button>
+    </td>
+    </tr>
+    
+</table>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+        body{
+            background-color: rgb(169, 218, 113);
+        }
+        .navBar{
+            width: 100em;
+            width: 100%;           
+        }
+
+        .navBar ul{
+            list-style: none;
+        }
+         ul li{
+            display: inline-block;
+            padding: 15px;
+        }
+        ul li a{
+            text-align: center;
+            text-decoration: none;
+        }
+        ul li a:hover{
+            background-color: rgb(7, 19, 16);
+            transition: 0.3s;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button{
+            /* width: 155px; */
+            height: 45px;
+            color:rgb(100, 100, 84);
+            border-radius: 15px;
+            background-color:rgb(13, 190, 78);
+            text-align: center;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+        button:hover{
+            transform:scale(1.05);
+            background-color: rgb(68, 21, 30);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="naBar">
+        <nav>
+            <h2 class="logo">Walking <span>alone</span></h2>
+            <ul>
+                       <li><a href="#"><button class="nav-btn">Home</button></a></li>
+                       <li><a href="#"><button class="nav-btn">register</button></a></li>
+                       <li><a href="#"><button class="nav-btn">read</button></a></li>
+                       <li><a href="#"><button class="nav-btn">write</button></a></li>
+                       <li><a href="#"><button class="nav-btn">Contact</button></a></li>
+                       <li><a href="#"><button class="nav-btn">about</button></a></li>
+                   </ul>
+                   <button type="button">Subscribe</button>
+        </nav>
+    </div>
+    
+     <form action="form" method="GET" class="form">
+        SIGNUP
+        <fieldset class="fieldset">
+            <label for="name" id="name">
+             
+                <table>
+                    <tr>
+                    <td>Name:</td>
+                    <td>
+                        <input type="text" name="" id="n" placeholder="name" maxlength="35" minlength="4" required>
+                    </td>
+                    </tr>
+
+                     <tr>
+                    <td>email:</td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="ABC@gmail.com" maxlength="45" minlength="10" required>
+                    </td>
+                    </tr>
+
+                     <tr>
+                    <td>  password :</td>
+                    <td>
+                         <input type="password" name="password" id="password"  maxlength="12" minlength="6" required>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td> conform password :</td>
+                        <td>
+                            <input type="password" name="password" id="conformpassword" maxlength="12" minlength="6" required>
+                            <br>
+                        </td>
+                    </tr>
+                </table>
+                 <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+            </label>
+        </fieldset>
+    </form> 
+</body>
+</html>
